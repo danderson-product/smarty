@@ -366,7 +366,7 @@
   background-color: #0b2823;
   padding: 20px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin: 0 7%; /* Margin on the sides */
 }
 
 .number-box {
@@ -388,7 +388,11 @@
   font-size: 1rem;
 }
 
-/* Responsive layout */
+/* Remove extra margin between sections */
+.numbered-section-horizontal {
+  margin-top: 10px; /* Small top margin */
+}
+
 @media (max-width: 768px) {
   .grid-features {
     grid-template-columns: 1fr;
@@ -396,6 +400,7 @@
   
   .numbered-section-horizontal {
     grid-template-columns: 1fr;
+    margin: 0; /* Adjust margin for mobile */
   }
 
   .feature-title, .number {
@@ -407,6 +412,7 @@
   }
 }
 </style>
+
 
   <div class="three-dots">
     <!-- <span></span>
