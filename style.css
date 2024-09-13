@@ -449,6 +449,14 @@ li.first-feat {
   border: 1px solid rgb(57, 212, 161);
   text-decoration: none;
 }
+#name {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  border: 1px solid rgb(57, 212, 161);
+  text-decoration: none;
+}
 
 #submit {
   width: 100px;
