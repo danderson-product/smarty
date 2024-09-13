@@ -26,9 +26,11 @@ body {
 
 #header-img {
   margin-left: 20px;
-  float: left;
   height: 80px;
+  max-width: 100%;
+  object-fit: contain;
 }
+
 
 nav ul {
   overflow: hidden;
