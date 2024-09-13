@@ -233,19 +233,18 @@
 </style>
 <!--Content starts-->
 <section class="video-content">
-  <section id="about" class="content">
+  <section class="content">
     <div class="inner-content">
       <div class="inner-content-text content__TextRight">
-        <div  class="inter-content-subtitle">
-          How Smarty solves this
-        </div>
-        <div class="inner-content-title">
-          Smarty's Solution
-        </div>
+        <div id="about" class="inter-content-subtitle">How Smarty solves this</div>
+
+        <div class="inner-content-title">Smarty's Solution</div>
+
         <div class="inner-content-para">
           <p>Smarty's solution provides data analysis, seamless review collection, direct notifications, and easy integration to boost your restaurant’s performance.</p>
         </div>
       </div>
+
       <div class="inner-image-container container__ImageLeft">
         <!-- 2x2 Key Features Section -->
         <div class="grid-features">
@@ -254,16 +253,19 @@
             <h1 class="feature-title">AI</h1>
             <p class="feature-text">Data Analysis & Insights to fix</p>
           </div>
+
           <div class="feature-box">
             <div class="feature-icon">💬</div>
             <h1 class="feature-title">REVIEWS</h1>
             <p class="feature-text">Collected Seamlessly across channels</p>
           </div>
+
           <div class="feature-box">
             <div class="feature-icon">📱</div>
             <h1 class="feature-title">DIRECT</h1>
             <p class="feature-text">WhatsApp Notifications (for on-the-go management)</p>
           </div>
+
           <div class="feature-box">
             <div class="feature-icon">🛠️</div>
             <h1 class="feature-title">EASY</h1>
@@ -271,9 +273,30 @@
           </div>
         </div>
       </div>
+
+      <!-- New Numbered Section -->
+      <div class="numbered-section">
+        <div class="number-box">
+          <h1 class="number">#1</h1>
+          <p class="number-text">Enhance customer satisfaction and drive sales.</p>
+        </div>
+        <div class="number-box">
+          <h1 class="number">#2</h1>
+          <p class="number-text">Motivate staff to perform at their best.</p>
+        </div>
+        <div class="number-box">
+          <h1 class="number">#3</h1>
+          <p class="number-text">Boost manager productivity (fewer hires needed).</p>
+        </div>
+        <div class="number-box">
+          <h1 class="number">#4</h1>
+          <p class="number-text">Identify weak points and underlying issues.</p>
+        </div>
+      </div>
     </div>
   </section>
 </section>
+
 <style>
 /* General styling for inner content */
 .inner-content {
@@ -335,6 +358,53 @@
     flex: 1 1 100%;
   }
 }
+  /* Numbered Section Styling */
+.numbered-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: #0b2823;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.number-box {
+  background-color: #003d3b;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  color: #c2f8c2;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.number-text {
+  color: #c2f8c2;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .numbered-section {
+    grid-template-columns: 1fr;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  .number-text {
+    font-size: 1rem;
+  }
+}
+
 </style>
   <div class="three-dots">
     <!-- <span></span>
