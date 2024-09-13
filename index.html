@@ -233,23 +233,12 @@
 </style>
 <!-- Content starts -->
 <section class="video-content">
-  
-  <!-- Smarty's Solution as its own row -->
-  <section class="content">
-    <div class="inner-content-text content__TextCenter">
-      <div id="about" class="inter-content-subtitle">How Smarty solves this</div>
-      <div class="inner-content-title">Smarty's Solution</div>
-      <div class="inner-content-para">
-        <p>Smarty's solution provides data analysis, seamless review collection, direct notifications, and easy integration to boost your restaurant’s performance.</p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- 2x2 Key Features Section and Numbered Section in the same row -->
+
+  <!-- Smarty's Solution + 2x2 Key Features Side by Side -->
   <section class="content">
     <div class="inner-content">
       
-      <!-- 2x2 Key Features Section -->
+      <!-- 2x2 Key Features Section (Left) -->
       <div class="inner-image-container container__ImageLeft">
         <div class="grid-features">
           <div class="feature-box">
@@ -257,16 +246,19 @@
             <h1 class="feature-title">AI</h1>
             <p class="feature-text">Data Analysis & Insights to fix</p>
           </div>
+
           <div class="feature-box">
             <div class="feature-icon">💬</div>
             <h1 class="feature-title">REVIEWS</h1>
             <p class="feature-text">Collected Seamlessly across channels</p>
           </div>
+
           <div class="feature-box">
             <div class="feature-icon">📱</div>
             <h1 class="feature-title">DIRECT</h1>
             <p class="feature-text">WhatsApp Notifications (for on-the-go management)</p>
           </div>
+
           <div class="feature-box">
             <div class="feature-icon">🛠️</div>
             <h1 class="feature-title">EASY</h1>
@@ -275,28 +267,40 @@
         </div>
       </div>
       
-      <!-- Numbered Section -->
-      <div class="numbered-section">
-        <div class="number-box">
-          <h1 class="number">#1</h1>
-          <p class="number-text">Enhance customer satisfaction and drive sales.</p>
-        </div>
-        <div class="number-box">
-          <h1 class="number">#2</h1>
-          <p class="number-text">Motivate staff to perform at their best.</p>
-        </div>
-        <div class="number-box">
-          <h1 class="number">#3</h1>
-          <p class="number-text">Boost manager productivity (fewer hires needed).</p>
-        </div>
-        <div class="number-box">
-          <h1 class="number">#4</h1>
-          <p class="number-text">Identify weak points and underlying issues.</p>
+      <!-- Smarty's Solution Text (Right) -->
+      <div class="inner-content-text content__TextRight">
+        <div id="about" class="inter-content-subtitle">How Smarty solves this</div>
+
+        <div class="inner-content-title">Smarty's Solution</div>
+
+        <div class="inner-content-para">
+          <p>Smarty's solution provides data analysis, seamless review collection, direct notifications, and easy integration to boost your restaurant’s performance.</p>
         </div>
       </div>
-
+      
     </div>
   </section>
+
+  <!-- Numbered Section as Horizontal Row of 4 -->
+  <section class="numbered-section-horizontal">
+    <div class="number-box">
+      <h1 class="number">#1</h1>
+      <p class="number-text">Enhance customer satisfaction and drive sales.</p>
+    </div>
+    <div class="number-box">
+      <h1 class="number">#2</h1>
+      <p class="number-text">Motivate staff to perform at their best.</p>
+    </div>
+    <div class="number-box">
+      <h1 class="number">#3</h1>
+      <p class="number-text">Boost manager productivity (fewer hires needed).</p>
+    </div>
+    <div class="number-box">
+      <h1 class="number">#4</h1>
+      <p class="number-text">Identify weak points and underlying issues.</p>
+    </div>
+  </section>
+  
 </section>
 
 <!-- Styles -->
@@ -308,85 +312,98 @@
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.content__TextCenter {
-  text-align: center;
+
+.content__TextRight {
+  flex: 1 1 50%;
   padding: 20px;
 }
+
 .container__ImageLeft {
   flex: 1 1 50%;
   padding: 20px;
 }
-/* 2x2 Grid Features Styling */
+
+/* 2x2 Grid Features Styling (Left) */
 .grid-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
   background-color: #0b2823;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
+
 .feature-box {
   background-color: #003d3b;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
+
 .feature-icon {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #C2F8C2;
   margin-bottom: 10px;
 }
+
 .feature-title {
   color: #C2F8C2;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .feature-text {
   color: #C2F8C2;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-/* Numbered Section Styling */
-.numbered-section {
+/* Numbered Section as Horizontal Row of 4 */
+.numbered-section-horizontal {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   background-color: #0b2823;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 20px;
 }
+
 .number-box {
   background-color: #003d3b;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 .number {
   color: #7BCBB7;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
 .number-text {
   color: #7BCBB7;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* Responsive layout */
 @media (max-width: 768px) {
-  .grid-features, .numbered-section {
+  .grid-features {
     grid-template-columns: 1fr;
   }
-  .feature-title, .number {
-    font-size: 2rem;
+  
+  .numbered-section-horizontal {
+    grid-template-columns: 1fr;
   }
+
+  .feature-title, .number {
+    font-size: 1.5rem;
+  }
+
   .feature-text, .number-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 </style>
