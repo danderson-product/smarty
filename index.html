@@ -371,19 +371,23 @@
 <section class="subscribe-container" id='contact'>
   <div class="hero-newsletter"><h2>Let's Chat!</h2></div>
   
-         <div class="form-container">
+<div class="form-container">
+  <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+    
+    <!-- Name Input -->
+    <input type="text" placeholder="Your Name" name="name" id="name" required>
+    
+    <!-- Email Input -->
+    <input type="email" placeholder="Email Address" name="email" id="email" required>
+    
+    <!-- Submit Button -->
+    <div>
+      <input type="submit" id="submit" value="Subscribe">
+    </div>
+    
+  </form>
+</div>
 
-             <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-               <input type="email" placeholder="Email Address" name="email" id="email" required>
-                <input type="email" placeholder="Email Address" name="email" id="email" required>
-                 <input type="email" placeholder="Email Address" name="email" id="email" required>
-             <div>
-    <input type="submit" id="submit" value="Subscribe">
-  </div>
-             </form>
-             
-          
-  </div>
 </section>
 <!--Content ends-->
 
