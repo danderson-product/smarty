@@ -258,69 +258,88 @@
 <!--Content starts-->
 <section class="video-content">
 
- 
   <section class="content">
 
+    <div class="inner-content">
+      <div class="inner-content-text content__TextRight">
+        <div id="about" class="inter-content-subtitle">
+          How Smarty solves this
+        </div>
 
+        <div class="inner-content-title">
+          Smarty's Solution
+        </div>
 
-  <div class="inner-content">
-    <div class="inner-content-text content__TextRight">
-      <div id="about" class="inter-content-subtitle">
-        How Smarty solve this
+        <div class="inner-content-para">
+          <p>Smarty's solution provides data analysis, seamless review collection, direct notifications, and easy integration to boost your restaurant’s performance.</p>
+        </div>
       </div>
 
-      <div class="inner-content-title">
-      Smarty's Solution
-      </div>
+      <div class="inner-image-container container__ImageLeft">
+        <!-- 2x2 Key Features Section -->
+        <div class="grid-features">
+          <div class="feature-box">
+            <div class="feature-icon">🤖</div>
+            <h1 class="feature-title">AI</h1>
+            <p class="feature-text">Data Analysis & Insights to fix</p>
+          </div>
 
-      <div class="inner-content-para">
-        <p>Smarty solution about something and fix everything that boost something</p>
+          <div class="feature-box">
+            <div class="feature-icon">💬</div>
+            <h1 class="feature-title">REVIEWS</h1>
+            <p class="feature-text">Collected Seamlessly across channels</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">📱</div>
+            <h1 class="feature-title">DIRECT</h1>
+            <p class="feature-text">WhatsApp Notifications (for on-the-go management)</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">🛠️</div>
+            <h1 class="feature-title">EASY</h1>
+            <p class="feature-text">Integration & Onboarding</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="inner-image-container container__ImageLeft">
-   <!-- Vertical Key Features Section -->
-<div class="vertical-features container__ImageLeft">
-  <div class="feature-box">
-    <div class="feature-icon">🤖</div>
-    <h1 class="feature-title">AI</h1>
-    <p class="feature-text">Data Analysis & Insights to fix</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="feature-icon">💬</div>
-    <h1 class="feature-title">REVIEWS</h1>
-    <p class="feature-text">Collected Seamlessly across channels</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="feature-icon">📱</div>
-    <h1 class="feature-title">DIRECT</h1>
-    <p class="feature-text">WhatsApp Notifications (for on-the-go management)</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="feature-icon">🛠️</div>
-    <h1 class="feature-title">EASY</h1>
-    <p class="feature-text">Integration & Onboarding</p>
-  </div>
-</div>
+  </section>
+</section>
 
 <style>
-/* Vertical Features Styling */
-.vertical-features {
+/* General styling for inner content */
+.inner-content {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.content__TextRight {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+.container__ImageLeft {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+/* 2x2 Grid Features Styling */
+.grid-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   background-color: #0b2823;
   padding: 20px;
   border-radius: 10px;
-  width: 100%;
 }
 
 .feature-box {
   background-color: #003d3b;
   border-radius: 10px;
-  margin-bottom: 20px;
   padding: 20px;
   text-align: center;
 }
@@ -333,7 +352,7 @@
 
 .feature-title {
   color: #C2F8C2;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -343,26 +362,25 @@
   font-size: 1.2rem;
 }
 
+/* Responsive layout */
 @media (max-width: 768px) {
-  /* Stack the text and image sections on top of each other */
-  .vertical-features {
-    padding: 15px;
+  .grid-features {
+    grid-template-columns: 1fr;
   }
 
   .feature-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .feature-text {
     font-size: 1rem;
   }
+
+  .content__TextRight, .container__ImageLeft {
+    flex: 1 1 100%;
+  }
 }
 </style>
-
-
-  </div>
-
-</section>
 
   <div class="three-dots">
     <!-- <span></span>
