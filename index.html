@@ -279,10 +279,76 @@
     </div>
 
     <div class="inner-image-container container__ImageLeft">
-      <div class="inner-content-image content__ImageLeft">
-        <img class="section-images" src="Smarty LP/smarty_flowchart.png" style="object-position: 50% 50%;">
-      </div>
-    </div>
+     <!-- Vertical Key Features Section -->
+<div class="vertical-features container__ImageLeft">
+  <div class="feature-box">
+    <h1 class="feature-title">AI</h1>
+    <p class="feature-text">Data Analysis & Insights to fix</p>
+  </div>
+
+  <div class="feature-box">
+    <h1 class="feature-title">REVIEWS</h1>
+    <p class="feature-text">Collected Seamlessly across channels</p>
+  </div>
+
+  <div class="feature-box">
+    <h1 class="feature-title">DIRECT</h1>
+    <p class="feature-text">WhatsApp Notifications (for on-the-go management)</p>
+  </div>
+
+  <div class="feature-box">
+    <h1 class="feature-title">EASY</h1>
+    <p class="feature-text">Integration & Onboarding</p>
+  </div>
+</div>
+
+<style>
+/* Vertical Features Styling */
+.vertical-features {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b2823;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.feature-box {
+  background-color: #003d3b;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.feature-title {
+  color: #C2F8C2;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  color: #C2F8C2;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  /* Stack the text and image sections on top of each other */
+  .vertical-features {
+    padding: 15px;
+  }
+
+  .feature-title {
+    font-size: 2.5rem;
+  }
+
+  .feature-text {
+    font-size: 1rem;
+  }
+}
+</style>
+
   </div>
 
 </section>
